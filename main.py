@@ -1,5 +1,6 @@
-import os
 import json
+import os
+
 from linebot import LineBotApi
 from linebot.models import TextSendMessage
 
@@ -7,6 +8,7 @@ from linebot.models import TextSendMessage
 LINE_CHANNEL_ACCESS_TOKEN = os.environ['LINE_CHANNEL_ACCESS_TOKEN']
 # チャネルアクセストークンを使用して、LineBotApiのインスタンスを作成
 LINE_BOT_API = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
+
 
 def lambda_handler(event, context):
     # LINEからメッセージを受信
